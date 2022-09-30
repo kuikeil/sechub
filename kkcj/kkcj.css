@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.content-box{
+    height: 100%;
+    background-color: #D7D7D7;
+    padding: 20px;
+}
+.shang{
+    position: absolute;
+    width: 297px;
+    height: 211px;
+    background: #FFFFFF;
+}
+.tupian{
+    position: absolute;
+    left: 6%;
+    top: 10%;
+    width: 26px;
+}
+.yulu{
+    position: absolute;
+    width: 265px;
+    height: 68px;
+    left: 6%;
+    top: 22%;
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    /* or 142% */
+    color: #09120C;
+}
+.rili{
+    position: absolute;
+    width: 297px;
+    height: 76px;
+    left: 20px;
+    top: 211px;
+
+    background: #E8EAE8;
+}
+.tianshu{
+    position: absolute;
+    width: 44px;
+    height: 36px;
+    left: 36px;
+    top:70%;
+
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 36px;
+    /* identical to box height, or 100% */
+    color: rgba(9, 18, 12, 0.5);
+}
+.yuefen{
+    position: absolute;
+    width: 21px;
+    height: 16px;
+    left: 82px;
+    top: 71%;
+
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+
+    color: rgba(9, 18, 12, 0.5);
+}
+.nianfen{
+    position: absolute;
+    width: 29px;
+    height: 16px;
+    left: 82px;
+    top: 75%;
+
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+
+    color: rgba(9, 18, 12, 0.5);
+}
+.biaoshi{
+    position: absolute;
+    width: 112px;
+    height: 20px;
+    left: 30%;
+    top: 73%;
+
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+    text-align: right;
+
+    color: rgba(9, 18, 12, 0.5);
+
+}
