@@ -28,7 +28,7 @@ cmd = UI::Command.new("hello") {
   path = Sketchup.find_support_file "kkcj/kkcj.html", "Plugins"
   html_dialog.set_file path
   html_dialog.show
-  #UI.start_timer(3){html_dialog.close}
+  UI.start_timer(5){html_dialog.close}
 }
 
 cmd.small_icon = cmd.large_icon= "kkcj/image/head_portrait_for_kk.png" #设置图标
