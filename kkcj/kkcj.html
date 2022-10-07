@@ -12,12 +12,13 @@
     <div class="yulu" id="yululu"></div>
      <img class="touxiang" src="image/dxhp.png" alt="touxiang">
  </div>
- <p class="rili">
- <div class="tianshu" id="demo">xx</div>
- <div class="yuefen" id="yue">xx</div>
- <div class="nianfen" id="nian">xx</div>
- <div class="biaoshi" >斗西语录</div>
- </p>
+ <div class="rili">
+ <a class="tianshu" id="demo">天</a>
+ <a class="yuefen" id="yue">月份
+     <a class="nianfen" id="nian">年份</a>
+ </a>
+ <a class="biaoshi" >斗西语录</a>
+ </div>
  <script>
          var neirong=[
              '设计如不解决甲方问题，则无意义。',
@@ -49,7 +50,6 @@
          document.getElementById("demo").innerHTML=add(x);
          var yue =  d.getMonth();
          document.getElementById("yue").innerHTML="/"+(Number(add(yue))+1);
-
 
  </script>
 </body>

@@ -5,60 +5,48 @@
 .box{
     border: 1px solid red;
     background-color: #D7D7D7;
+    margin:6%;/*外边距*/
 }
 .shang{
     border: 1px solid green;
-    margin: auto;
-    position: absolute;
+    width: 100%;
+    height: 66%;
     left: 6%;
-    right: 6%;
-    top:6%;
-    bottom:30%;
     background: #FFFFFF;
-    border-radius: 20px;
+    border-radius: 20px;/*圆角半径*/
 }
 .tupian{
-    position: absolute;
-    left: 6%;
-    top: 9%;
     width: 9%;
-    bottom: 90%;
+    position:relative;
+    left:4%;
+    margin-top:4%;/*外边距*/
 }
 .touxiang{
-    position: absolute;
     left: 88%;
-    top: 78%;
-    width: 7.5%;
-
+    margin-bottom:4%;
+    width: 8%;
+    position:relative;
 }
 .yulu{
-    position: absolute;
-    width: 88%;
-    height: 60%;
-    left: 6%;
-    top: 30%;
-    bottom:30%;
-    font-family:  serif,sans-serif;
+    width: 60%;
+    margin:6% auto;
+    text-align:left;
+    font-family: serif,sans-serif;
     font-style: normal;
     font-weight: bold;
+    font-size: 150%;
     color: #09120C;
 }
 .rili{
     border: 1px solid yellow;
-    position: absolute;
-    left: 6%;
-    right: 6%;
-    top:70%;
-    bottom:6%;
+    height:200px;
+    display: flex;
     border-radius: 20px;
     background: #E8EAE8;
 }
 .tianshu{
-    position: absolute;
-    width: 43px;
-    height: 36px;
+    flex: 15;
     left: 8%;
-    top: 77%;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -66,9 +54,7 @@
     color: rgba(9, 18, 12, 0.5);
 }
 .yuefen{
-    position: absolute;
-    width: 21px;
-    height: 16px;
+    flex: 35;
     left: 17%;
     top: 78%;
     font-style: normal;
@@ -77,28 +63,13 @@
     line-height: 16px;
     color: rgba(9, 18, 12, 0.5);
 }
-.nianfen{
-    position: absolute;
-    width: 29px;
-    height: 16px;
-    left: 17%;
-    top: 82%;
-    font-style: normal;
-    font-weight: 550;
-    font-size: 12px;
-    line-height: 16px;
-    color: rgba(9, 18, 12, 0.5);
-}
 .biaoshi{
-    position: absolute;
-    width: 112px;
-    height: 20px;
+    flex: 50;
+    top: 50%;
     left: 50%;
-    top: 80%;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
-    text-align: right;
     color: rgba(9, 18, 12, 0.5);
 }
