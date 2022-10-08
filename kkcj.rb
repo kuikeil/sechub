@@ -1,4 +1,3 @@
-require "sketchup.rb"
 #============斗西语录==============
 toolbar = UI::Toolbar.new "斗西语录"
 #样式设置

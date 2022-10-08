@@ -5,7 +5,7 @@
     <title>dx-know</title>
     <link rel='stylesheet' href="kkcj.css">
 </head>
-<body class="display-page" >
+<body class="display-page" id="sss" >
  <div class="display-page-uh">
     <img class="display-page-uh-colon" src="image/maohao.png" alt="colon">
     <img class="display-page-uh-hp" src="image/dxhp.png" alt="hp">
@@ -50,6 +50,11 @@
          document.getElementById("day").innerHTML=add(x);
          var now_Month =  now_Time.getMonth();
          document.getElementById("month").innerHTML="/"+(Number(add(now_Month))+1)+"<br>";
+
+         let pageElement = document.getElementById('sss');
+         pageElement.addEventListener('mouseover', function () {
+             // confirm('ok')
+         })
  </script>
 </body>
 </html>
