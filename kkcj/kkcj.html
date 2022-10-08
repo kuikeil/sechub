@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
 <head>
     <meta charset="UTF-8">
-    <title>ceshi</title>
+    <title>dx-know</title>
     <link rel='stylesheet' href="kkcj.css">
 </head>
-
-<body class="box">
- <div class="shang">
-    <img class="tupian" src="image/maohao.png" alt="maohao">
-    <div class="yulu" id="yululu"></div>
-     <img class="touxiang" src="image/dxhp.png" alt="touxiang">
+<body class="display-page" >
+ <div class="display-page-uh">
+    <img class="display-page-uh-colon" src="image/maohao.png" alt="colon">
+    <img class="display-page-uh-hp" src="image/dxhp.png" alt="hp">
+    <div class="display-page-uh-sentence" id="sentence"></div>
  </div>
- <div class="rili">
- <a class="tianshu" id="demo">天</a>
- <a class="yuefen" id="yue">月份
-     <a class="nianfen" id="nian">年份</a>
- </a>
- <a class="biaoshi" >斗西语录</a>
+ <div class="display-page-lh">
+ <a class="display-page-lh-day" id="day">天</a>
+     <a class="display-page-lh-md">
+      <span id="month">月份</span>
+      <span id="year">年份</span>
+     </a>
+ <a class="display-page-lh-ft" >斗西の设计豆知识</a>
  </div>
  <script>
-         var neirong=[
+         var random_Sentence=[
              '设计如不解决甲方问题，则无意义。',
              '工作中一帆风顺的设计项目，就像不秃的设计师脑袋一样罕见。',
              '施工图本质上是「说明书」，因此最重要的是要让使用者「看懂」。',
@@ -33,12 +33,12 @@
              '我哒哒的马蹄是个美丽的错误，我只是过客，不是归人。',
              '要理想不要幻想，要激情不要矫情。凡事知足常乐。',
              '我的眼泪留了下来，灌溉了下面柔软的小草，不知道来年，会不会开出一地的记忆和忧愁。'];
-         var yu = neirong[Math.floor(Math.random() * neirong.length)];
-         document.getElementById("yululu").innerHTML=yu;
-         var d = new Date();
-         var nian = d.getFullYear();
-         document.getElementById("nian").innerHTML=nian;
-         var x = d.getDate();
+         var sentence = random_Sentence[Math.floor(Math.random() * random_Sentence.length)];
+         document.getElementById("sentence").innerHTML=sentence;
+         var now_Time = new Date();
+         var now_Year = now_Time.getFullYear();
+         document.getElementById("year").innerHTML=now_Year;
+         var x = now_Time.getDate();
          function add(num){
              if(num<10){
                  return "0"+num;
@@ -47,11 +47,9 @@
              {return num;
              }
          }
-         document.getElementById("demo").innerHTML=add(x);
-         var yue =  d.getMonth();
-         document.getElementById("yue").innerHTML="/"+(Number(add(yue))+1);
-
+         document.getElementById("day").innerHTML=add(x);
+         var now_Month =  now_Time.getMonth();
+         document.getElementById("month").innerHTML="/"+(Number(add(now_Month))+1)+"<br>";
  </script>
 </body>
 </html>
-

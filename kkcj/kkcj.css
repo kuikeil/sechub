@@ -1,75 +1,74 @@
 *{
     margin: 0;
     padding: 0;
+
 }
-.box{
-    border: 1px solid red;
+html,body{
+    height:94%;
+    width: 94%;
+}
+.display-page{
     background-color: #D7D7D7;
     margin:6%;/*外边距*/
 }
-.shang{
-    border: 1px solid green;
-    width: 100%;
-    height: 66%;
-    left: 6%;
-    background: #FFFFFF;
+.display-page-uh{
+    position: relative;
     border-radius: 20px;/*圆角半径*/
+    height: 75%;
+    background: #FFFFFF;
 }
-.tupian{
+.display-page-uh-colon{
+    position:absolute;
+    margin-top:4%;/*上边距*/
     width: 9%;
-    position:relative;
     left:4%;
-    margin-top:4%;/*外边距*/
 }
-.touxiang{
-    left: 88%;
-    margin-bottom:4%;
+.display-page-uh-hp{
+    position:absolute;
+    right: 5%;
+    bottom:6%;
     width: 8%;
-    position:relative;
 }
-.yulu{
-    width: 60%;
+.display-page-uh-sentence{
+    padding: 20%;
     margin:6% auto;
+    width: 60%;
+    height: 49%;
+    align-items: center;
     text-align:left;
-    font-family: serif,sans-serif;
+    font-family: 'PingFang SC','serif','sans-serif';
     font-style: normal;
     font-weight: bold;
-    font-size: 150%;
+    font-size: 100%;
     color: #09120C;
 }
-.rili{
-    border: 1px solid yellow;
-    height:200px;
+.display-page-lh{
     display: flex;
+    align-items: center;
+    height: 25%;
     border-radius: 20px;
     background: #E8EAE8;
-}
-.tianshu{
-    flex: 15;
-    left: 8%;
+    font-weight:bold;
     font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 36px;
     color: rgba(9, 18, 12, 0.5);
 }
-.yuefen{
-    flex: 35;
-    left: 17%;
-    top: 78%;
-    font-style: normal;
-    font-weight: 550;
-    font-size: 12px;
-    line-height: 16px;
-    color: rgba(9, 18, 12, 0.5);
+.display-page-lh-day{
+    display:inline-block;
+    width: 22%;
+    text-align: right;
+    font-size:300%;
 }
-.biaoshi{
-    flex: 50;
-    top: 50%;
-    left: 50%;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
+.display-page-lh-md{
+    display:inline-block;
+    width:28%;
+    padding-left: 1%;
+    text-align: left;
+    font-size: 100%;
+}
+.display-page-lh-ft{
+    display:inline-block;
+    text-align: center;
+    width: 50%;
+    font-size: 100%;
     line-height: 20px;
-    color: rgba(9, 18, 12, 0.5);
 }
