@@ -15,11 +15,17 @@ html_dialog = UI::WebDialog.new(option)
   path = Sketchup.find_support_file "kkcj/kkcj.html", "Plugins" #查找html文件
   html_dialog.set_file path#设置web的html文件
   html_dialog.show#展示web
-  UI.start_timer(5){html_dialog.close} #等待五秒后关闭此窗口
+  #设置回调
+
+  html_dialog.add_action_callback("kkcj") {|dialog, arg|
+  if arg<=1
+    UI.start_timer(5){html_dialog.close} #等待五秒后关闭此窗口
+  end
 }
+}
+#设置工具栏和图标
 cmd.small_icon = cmd.large_icon= "kkcj/image/dxhp.png" #设置图标
 cmd.tooltip = "斗西语录"  #图标名
 cmd.status_bar_text = "点击获取语录" #左下角的提示
 toolbar = toolbar.add_item cmd
 toolbar.show #展示该工具栏
-

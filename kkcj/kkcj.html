@@ -24,17 +24,16 @@
              '设计如不解决甲方问题，则无意义。',
              '工作中一帆风顺的设计项目，就像不秃的设计师脑袋一样罕见。',
              '施工图本质上是「说明书」，因此最重要的是要让使用者「看懂」。',
+             '学到的就是自己的。',
              '我们像是表面上的针，不停的转动，一面转，一面看着时间匆匆离去，却无能为力。',
-             '或许，最美的事不是留住时光，而是留住记忆，如最初相识的感觉一样，哪怕一个不经意的笑容，便是我们最怀念的故事。但愿，时光，如初见。',
              '时间没有等我，是你忘了带我走，我左手过目不忘的萤火，右手里是十年一个漫长的打坐。',
              '当你真正爱一样东西的时候你就会发现语言多么的脆弱和无力。文字与感觉永远有隔阂。',
              '我忘了哪年哪月的哪一日我在哪面墙上刻下一张脸—张微笑着忧伤着凝望我的脸。',
-             '如果难过，就努力抬头望天空吧，望着望着就忘了......它那么大，一定可以包容你的所有委屈。',
              '我哒哒的马蹄是个美丽的错误，我只是过客，不是归人。',
              '要理想不要幻想，要激情不要矫情。凡事知足常乐。',
              '我的眼泪留了下来，灌溉了下面柔软的小草，不知道来年，会不会开出一地的记忆和忧愁。'];
          var sentence = random_Sentence[Math.floor(Math.random() * random_Sentence.length)];
-         document.getElementById("sentence").innerHTML=sentence;
+         document.getElementById("sentence").innerText=sentence;
          var now_Time = new Date();
          var now_Year = now_Time.getFullYear();
          document.getElementById("year").innerHTML=now_Year;
@@ -51,10 +50,20 @@
          var now_Month =  now_Time.getMonth();
          document.getElementById("month").innerHTML="/"+(Number(add(now_Month))+1)+"<br>";
 
-         let pageElement = document.getElementById('sss');
-         pageElement.addEventListener('mouseover', function () {
-             // confirm('ok')
+         var arg;
+         arg = 0 ;
+         let pageElement1 = document.getElementById('sss');
+         pageElement1.addEventListener('mouseover', function () {
+             arg=2
          })
+         let pageElement2 = document.getElementById('sss');
+         pageElement2.addEventListener('mouseout', function () {
+             arg=1
+         })
+         //发送到sketchup
+
+         window.location = 'skp:kkcj@'+arg ;
+
  </script>
 </body>
 </html>
