@@ -1,7 +1,9 @@
 #============斗西语录==============
 toolbar = UI::Toolbar.new "斗西语录"
 #样式设置
-option={
+cmd = UI::Command.new("斗西语录") { #新建命令
+  html_dialog = UI::WebDialog.new(option)
+  option={
   dialog_title: "斗西语录-陪伴你的每一次设计",
   width: 363,#宽度
   height: 395,#高度
@@ -10,8 +12,6 @@ option={
   min_width:363,#最大高度
   min_height:395,#最小高度
 }
-cmd = UI::Command.new("hello") { #新建web窗口
-  html_dialog = UI::WebDialog.new(option)
   path = Sketchup.find_support_file "kkcj/kkcj.html", "Plugins" #查找html文件
   html_dialog.set_file path#设置web的html文件
   html_dialog.show#展示web
